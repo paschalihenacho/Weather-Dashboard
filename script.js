@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1314eae6292d47cc0056e8c60f243ff06ed45f28
 // $(document).ready(function() {
     var apiKey = "c9871eecb074811b7872bedc2fda20f7";
     var city = ''
