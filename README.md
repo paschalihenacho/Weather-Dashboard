@@ -10,7 +10,8 @@ This application took utilizes third-party weather API called Open Weather to qu
 # Credits:
 1. https://openweathermap.org
 2. https://unsplash.com
-3. Background image by Romello Williams @romello
+3. Body Background image by Romello Williams @romello
+4. Five-Day Forecasts background image by Alexandre Debieve @alexkixa
 
 # Tools:
 1. JavaScript

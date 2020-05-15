@@ -11,13 +11,14 @@ body {
     font-size: 16px;
     line-height: 1;
     background-image: url(./images/background.png);
+    background-position: center;
 }
 
 header {
     font-size: 40px;
     font-weight: bolder;
-    /* background-color: #04193b; */
-    background-image: url(./images/weather2.png);
+    background-color: #04193b;
+    /* background-image: url(./images/weather2.png); */
     background-position: top;
     color: whitesmoke;
     text-align: center;
@@ -35,10 +36,11 @@ header {
     margin-top: 20px;
     width: auto;
     height: auto;
-    background-image: url(./images/weather2.png);
+    max-width: 500px;
+    background-image: url(./images/background2.png);
     
-    background-position: center;
-    border-color: repeating-linear-gradient(red, yellow 10%, green 20%);
+    background-position: bottom;
+   /* border-color: repeating-linear-gradient(red, yellow 10%, green 20%); */
 }
 
 
@@ -51,7 +53,8 @@ header {
 section {
     overflow: auto;
     clear: both;
-    width: 100%;
+    width: auto;
+    padding-bottom: 50px;
   }
 
 /* Search for a city sidebar */
@@ -68,12 +71,20 @@ section {
 
 button {
 border-radius: 10px;
+background-color: #04193b !important;
+color: whitesmoke;
+font-weight: bolder;
+font-size: larger;
+border-radius: 40px;
+margin: 5px;
+border: 5px;
 }
 
 button:hover{
     border-color: white !important;
-    background-color: #04193b;
+    background-image: url(./images/weather2.png);
     color: whitesmoke !important;
+    font-size: x-large;
   }
 
 h1 {
@@ -97,10 +108,6 @@ h2 {
     text-align: left;
     font-weight: bolder;
     padding: 20px;
-}
-#fiveDay{
-    color: #3b5998;
-    
 }
 
 p {
@@ -170,13 +177,16 @@ ul {
 /*--5-Day Forecast */
 
 #fiveDay {
-    text-align: left;
     font-weight: bold;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 15px;
-    font-size: 30px;
-    text-align: center;
+    font-size: 40px;
+    text-align: left;
+    color: #3b5998;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
 }
+
 .daily{
     padding: 5px;
     color: whitesmoke;
