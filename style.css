@@ -16,30 +16,34 @@ body {
 header {
     font-size: 40px;
     font-weight: bolder;
-    background-image: url(./images/weather.png);
-    background-attachment: fixed;
-    color: white;
+    /* background-color: #04193b; */
+    background-image: url(./images/weather2.png);
+    background-position: top;
+    color: whitesmoke;
     text-align: center;
     padding: 25px;
+    position: sticky;
+    width: 110vw;
 }
 .card{
-    background-color: whitesmoke !important;
+    background-color: transparent;
     border-style: solid;
-    border: 2px solid #8f0d56 !important;
+    border: 2px solid #04193b !important;
     border-radius: 40px !important;
     text-align: left;
     margin-bottom: 20px;
     margin-top: 20px;
-    padding-bottom: 40px;
-    max-width: 800px !important;
     width: auto;
     height: auto;
+    background-image: url(./images/weather2.png);
+    
+    background-position: center;
+    border-color: repeating-linear-gradient(red, yellow 10%, green 20%);
 }
 
 
 .container {
     width: 100%;
-    padding-top: 20px;
     clear: both;
     float: right;
 }
@@ -57,8 +61,20 @@ section {
     position: fixed;
     top: 90px; 
     left: 0;
-    background-color: rgb(247, 245, 245);
+    background-color: transparent;
+    
+    /* background-color: #04193b; */
 }
+
+button {
+border-radius: 10px;
+}
+
+button:hover{
+    border-color: white !important;
+    background-color: #04193b;
+    color: whitesmoke !important;
+  }
 
 h1 {
     font-size: 20px;
@@ -67,7 +83,7 @@ h1 {
 }
 
 #basic-text1 {
-    background-color: #007bff;;
+    background-color: #04193b;
 }
 
 .fas {
@@ -81,6 +97,10 @@ h2 {
     text-align: left;
     font-weight: bolder;
     padding: 20px;
+}
+#fiveDay{
+    color: #3b5998;
+    
 }
 
 p {
@@ -155,12 +175,15 @@ ul {
     padding-top: 30px;
     padding-bottom: 15px;
     font-size: 30px;
-    color: black;
+    text-align: center;
 }
-
-#dailyforcast {
-    width: 100%;
-    padding: 0;
+.daily{
+    padding: 5px;
+    color: whitesmoke;
+}
+#dailyWeather {
+   
+    padding-bottom: 40px !important;
     margin: 5px 0px 0px 15px;
 }
 
@@ -173,6 +196,8 @@ ul {
 
 .fiveDayCard {
     border: none;
+   background-image: url(./images/weather.png);
+   background-position: center;
 }
 
 .card-header {
@@ -190,7 +215,7 @@ ul {
     font-size: 16px;
     line-height: 30px;
     color: white;
-    background-color: #007bff;
+    background-color: transparent;
     border: none;
 }
 
@@ -234,7 +259,7 @@ ul {
     width: 100%;
     color: black;
     text-align: center;
-    background-color: thistle;
+    background-color: #04193b;
     font-size: 12px;
   }
 
