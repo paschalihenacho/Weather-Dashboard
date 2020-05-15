@@ -9,35 +9,33 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <title>Weather Dashboard</title>
-    
-    <!-- CSS Style -->
     <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
-<!-- Weather Header -->
-<header class="row">
-    <div class="col-md-12" id="header">Weather Dashboard</div>
-</header>
+    <!-- Header -->
+    <header class="row">
+        <div class="col-md-12" id="header">Weather Dashboard</div>
+    </header>
 
-<!-- Search Bar Columns -->
-<aside class="row">
-    <div class="col-md-3 form-group" id="sideNav">
-        <h1>Search for a City:</h1>
-        <div id="cityInput" class="input-group md-form form-sm form-1 pl-0">
-            <input id="input" class="form-control my-0 py-1" type="text" 
-            placeholder="Enter city name" aria-label="Search">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="search"><i class="fas fa-search"
-                    aria-hidden="true"></i></span>
-              </div>
+    <!-- Search Bar Columns -->
+    <aside class="row">
+        <div class="col-md-3 form-group" id="sideNav">
+            <h1>Search for a City:</h1>
+            <div id="cityInput" class="input-group md-form form-sm form-1 pl-0">
+                <input id="input" class="form-control my-0 py-1" type="text" placeholder="Enter a city" aria-label="Search">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-text1"><i class="fas fa-search"
+                        aria-hidden="true"></i></span>
+                  </div>
+            </div>
+            <!-- Prepends all searched cities -->
+            <div id="cityButtons">
+                <ul></ul>
+            </div>  
         </div>
-        <div id="cityButtons">
-            <ul></ul>
-        </div>  
-    </div>
-</aside>
+    </aside>
 
  <!-- Main container with Daily Weather and 5-Day Forecast-->
     <main class="container col-md-9">
@@ -45,7 +43,7 @@
          <!-- Row with Daily Weather -->
         <div class="row">    
             <div class="col-md-12">
-                <div class="card">
+                <div class="daily card">
                     <div id="dailyWeather" class="body">
                     </div>
                 </div>
@@ -79,9 +77,15 @@
         </section> 
 
     </main>
- 
-
-  <!--link to JavaScript and jQuery & Moment -->
+    <footer class="text-muted">
+        <div>
+            <span>&copy; Paschal Ihenacho 2020
+            <a class="social" href="https://www.linkedin.com/in/paschal-ihenacho/"><i class="fab fa-linkedin"></i></a>
+            <a class="social" href="paschal.ihenacho@gmail.com"><i class="fab fa-google-plus"></i></a>
+            <a class="social" href="https://github.com/paschalihenacho"><i class="fab fa-github"></i></a>
+    </span>
+        </div>
+    </footer>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="script.js"></script>
