@@ -22,4 +22,4 @@ This application took utilizes third-party weather API called Open Weather to qu
 6. OpenWeather API
 7. Momment.js
 
-# LIVE VIEW:
+# LIVE VIEW: https://paschalihenacho.github.io/Weather-Dashboard/.
