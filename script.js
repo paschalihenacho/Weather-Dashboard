@@ -16,7 +16,7 @@ var unit = '&units=imperial';
 // ================================================================
 // showWeather function
 function showWeather(cityInput) {
-oneDay = `${oneDayURL} ${cityInput} ${unit} ${apiKey}`;
+oneDay = `${oneDayURL}${cityInput}${unit}${apiKey}`;
 console.log("oneDay", oneDay); 
 
   $("#dailyWeather").empty();

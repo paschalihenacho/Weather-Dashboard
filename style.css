@@ -80,6 +80,10 @@ margin: 5px;
 border: 5px;
 }
 
+#input{
+    display: block;
+}
+
 button:hover{
     border-color: white !important;
     background-image: url(./images/weather2.png);
